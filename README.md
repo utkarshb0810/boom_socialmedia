@@ -1,6 +1,6 @@
 # 💥 BOOM - Short & Long Video Platform (Full Stack)
 
-A full-stack web app where creators can upload short-form videos or  long-form YouTube links. Viewers can watch, buy, comment, and gift creators.
+A full-stack web app where creators can upload short-form videos or long-form YouTube links. Viewers can watch, buy, comment, and gift creators.
 
 ---
 
@@ -9,7 +9,7 @@ A full-stack web app where creators can upload short-form videos or  long-form Y
 - **Frontend:** React.js + Tailwind CSS + Axios + React Router
 - **Backend:** Node.js + Express.js + MongoDB + Multer
 - **Auth:** JWT
-- **Video Types:** 
+- **Video Types:**
   - Short-form: Upload `.mp4` videos
   - Long-form: Paste YouTube links
 
@@ -31,7 +31,27 @@ A full-stack web app where creators can upload short-form videos or  long-form Y
 
 ### 📦 Backend
 
-```bash
+````bash
 cd server
 npm install
 touch .env
+
+Add this to .env ---->
+    MONGO_URI=<your-mongodb-connection-string>
+    JWT_SECRET=your_jwt_secret_key
+    PORT=8000
+
+Run backend---->
+    npm run dev
+
+### 📦 Frontend
+
+```bash
+cd client
+npm install
+npm run dev
+
+
+
+
+````
